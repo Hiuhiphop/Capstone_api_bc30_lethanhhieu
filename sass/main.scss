@@ -1,0 +1,15 @@
+@import "./Abstracts/functions";
+@import "./Abstracts/mixin";
+@import "./Abstracts/variables";
+
+@import "./Base/font";
+@import "./Base/global";
+@import "./Base/reset";
+
+@import "./Layout/header";
+@import "./Layout/carousel";
+@import "./Layout/footer";
+
+@import "./Pages/home";
+@import "./Pages/details";
+@import "./Pages/register";

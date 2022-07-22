@@ -1,0 +1,27 @@
+.header {
+  background-color: $color-black;
+  height: 5rem;
+  &-logo {
+    height: 3.2rem;
+    line-height: 5rem;
+    img {
+        vertical-align: middle !important;
+    }
+  }
+  &-content {
+    width: 20%;
+    li {
+      line-height: 5rem;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: $text-color-white;
+      span {
+        @extend li;
+        font-size: 3.6rem;
+      }
+      a {
+        @extend li;
+      }
+    }
+  }
+}
