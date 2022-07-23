@@ -1,0 +1,14 @@
+.menu {
+  position: relative;
+  .nav-link {
+    font-size: 1.6rem;
+  }
+  .active::before {
+    content: "";
+    position: absolute;
+    width: 4.5rem;
+    height: 0.2rem;
+    background-color: $color-black;
+    top: 3.2rem;
+  }
+}
