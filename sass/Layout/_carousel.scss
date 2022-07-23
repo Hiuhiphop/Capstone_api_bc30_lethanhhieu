@@ -1,0 +1,45 @@
+.carousel {
+    margin-top: 10rem;
+  &-item {
+    background-image: url(/assets/images/image6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    .items-left {
+      width: 60%;
+    }
+    .items-right {
+      h2 {
+        font-size: 4rem;
+        font-weight: 300;
+      }
+      h4 {
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      .btn {
+        font-size: 2rem;
+        margin: 2rem 0;
+        background-color: #f8b653;
+        padding: 1rem 2rem;
+        color: $text-color-white;
+        border: none;
+      }
+    }
+  }
+  .carousel-control-prev-icon {
+    background-image: url(/assets/images/Polygon2.png) !important;
+    width: 4rem;
+    height: 7rem;
+  }
+  .carousel-control-next-icon {
+    background-image: url(/assets/images/Polygon1.png) !important;
+    width: 4rem;
+    height: 7rem;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+}
