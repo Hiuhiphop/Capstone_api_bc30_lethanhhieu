@@ -1,0 +1,35 @@
+.footer {
+  margin-top: 10rem;
+  .footer-up {
+    padding: 2rem 0;
+    a,
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: rgb(73, 73, 73);
+    }
+    a:hover {
+      color: $color-black;
+    }
+    .btn1 {
+      font-weight: 400;
+      color: #ffb94f;
+    }
+    .btn1:hover {
+      color: #ff9900;
+    }
+
+    .footer-items {
+      width: 30%;
+      padding-left: 2rem;
+      border-left: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+  .footer-down {
+    @extend .footer-up;
+    // padding: 5rem 0;
+    background-color: #e4e4e4;
+  }
+}

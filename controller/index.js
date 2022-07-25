@@ -26,7 +26,7 @@ const renderTable = (arr, id) => {
                 <span>$${arr[i].price}</span>
               </div>
             </figcaption>
-            <i class="fa-solid fa-cart-shopping"><a href="./details.html"></a></i>
+            <i class="fa-solid fa-cart-shopping"><a href="./details.html?productid=${arr[i].id}"></a></i>
           </figure>
     `;
   }
