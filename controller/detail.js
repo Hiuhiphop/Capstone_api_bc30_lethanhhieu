@@ -23,7 +23,7 @@ const renderTable = (arr, id) => {
                   ${arr[i].shortDescription}
                 </p>
                 <div class="price">
-                  <span>$${arr[i].price}</span>
+                  <span>${arr[i].price}</span>
                 </div>
               </figcaption>
               <i class="fa-solid fa-cart-shopping"><a href="./details.html?productid=${arr[i].id}"></a></i>
@@ -49,7 +49,8 @@ const renderDetails = (idProduct) => {
   document.getElementById("prod-img").src = idProduct.image;
   document.getElementById("prod-name").innerHTML = idProduct.name;
   document.getElementById("prod-desc").innerHTML = idProduct.description;
-  document.getElementById("prod-price").innerHTML = idProduct.price + " $";
+  document.getElementById("prod-price").innerHTML =
+    "Price: " + idProduct.price + "$";
 
   let sizeProd = idProduct.size;
   let html = "";
@@ -60,12 +61,21 @@ const renderDetails = (idProduct) => {
 };
 
 document.getElementById("up").onclick = () => {
-  let newNumber = 0;
   let number = document.querySelector("#number").innerHTML;
-  newNumber = number + 1;
-  console.log(newNumber);
-  return;
+  let newNumber = parseFloat(number) + 1;
+  document.querySelector("#number").innerHTML = newNumber;
 };
+
+document.getElementById("down").onclick = () => {
+  let number = document.querySelector("#number").innerHTML;
+  let newNumber = parseFloat(number) - 1;
+  if (newNumber > 0) {
+    document.querySelector("#number").innerHTML = newNumber;
+  } else {
+    return;
+  }
+};
+
 window.onload = () => {
   getDetails();
   getAllProduct();
