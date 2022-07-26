@@ -1,0 +1,11 @@
+@mixin btn {
+  font-size: 2rem;
+  margin: 2rem 0;
+  background-color: #f8b653;
+  padding: 1rem 2rem;
+  color: $text-color-white;
+  border: none;
+  &:hover {
+    background-color: #faa423;
+  }
+}

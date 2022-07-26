@@ -58,6 +58,14 @@ const renderDetails = (idProduct) => {
   }
   document.getElementById("prod-size").innerHTML = html;
 };
+
+document.getElementById("up").onclick = () => {
+  let newNumber = 0;
+  let number = document.querySelector("#number").innerHTML;
+  newNumber = number + 1;
+  console.log(newNumber);
+  return;
+};
 window.onload = () => {
   getDetails();
   getAllProduct();

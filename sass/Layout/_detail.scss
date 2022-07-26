@@ -1,12 +1,18 @@
 .product-detail {
-    .detail-img {
-        width: 40%;
-        .prod-img {
-            
+  .detail-img {
+    width: 40%;
+    .prod-img {
+    }
+  }
+  .detail-content {
+    width: 50%;
+    #prod-size {
+        .btn {
+            margin-right: 1.2rem;
         }
     }
-    .detail-content {
-        width: 50%;
-        
+    .btn1 {
+        @include btn;
     }
+  }
 }

@@ -78,6 +78,9 @@
   color: #fff;
   border: none;
 }
+.carousel-item .items-right .btn:hover {
+  background-color: #faa423;
+}
 .carousel .carousel-control-prev-icon {
   background-image: url(/assets/images/Polygon2.png) !important;
   width: 4rem;
@@ -99,6 +102,20 @@
 }
 .product-detail .detail-content {
   width: 50%;
+}
+.product-detail .detail-content #prod-size .btn {
+  margin-right: 1.2rem;
+}
+.product-detail .detail-content .btn1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  background-color: #f8b653;
+  padding: 1rem 2rem;
+  color: #fff;
+  border: none;
+}
+.product-detail .detail-content .btn1:hover {
+  background-color: #faa423;
 }
 
 .product-feature h3 {
