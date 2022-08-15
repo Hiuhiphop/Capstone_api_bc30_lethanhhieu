@@ -17,6 +17,7 @@ document.getElementById("btn-register").onclick = () => {
   });
   promise.then((result) => {
     alert(result.data.message);
+    window.location.reload();
   });
   promise.catch((err) => {
     alert(err.response.data.message);
