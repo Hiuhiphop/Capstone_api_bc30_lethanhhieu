@@ -32,6 +32,7 @@ const renderTable = (arr, id) => {
   }
   document.getElementById(id).innerHTML = html;
 };
+
 window.onload = () => {
   getAllProduct();
 };

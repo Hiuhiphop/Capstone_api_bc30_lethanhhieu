@@ -1,6 +1,7 @@
 @import "./Abstracts/functions";
 @import "./Abstracts/mixin";
 @import "./Abstracts/variables";
+@import "./Abstracts/animations";
 
 @import "./Base/font";
 @import "./Base/global";
@@ -11,6 +12,7 @@
 @import "./Layout/carousel";
 @import "./Layout/detail";
 @import "./Layout/productFeature";
+@import "./Layout/register";
 @import "./Layout/footer";
 
 @import "./Pages/home";
